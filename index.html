@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task Management Dashboard UI</title>
-    <link rel="stylesheet" href="screen.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="task-manager"></div>
+    <div class="task-manager">
+      <div></div>
     <!-- left bar starts -->
-<div class="left-bar">
-  <div class="upper-part">
-    <div class="actions">
+    <div class="left-bar">
+      <div class="upper-part">
+        <div class="actions">
       <h2>Chris's Cross It-Off</h2>
     </div>
   </div>
@@ -21,43 +22,217 @@
   <div class="left-content">
     <ul class="action-list">
       <li class="item">
-        <img class="dashboard" src="dashboard.svg" alt="" />
+        <img class="dashboard" src="dashboard.svg" alt="">
         <span>Dashboard</span>
       </li>
       <li class="item">
-        <img class="calendar" src="calendar.svg" alt="" />
+        <img class="calendar" src="calendar.svg" alt="">
         <span> Calendar</span>
       </li>
       <li class="item">
-        <img class="messages" src="messages.svg" alt="" />
+        <img class="messages" src="messages.svg" alt="">
         <span>Messages</span>
       </li>
       <li class="item">
-        <img class="notes" src="notes.svg" alt="" />
+        <img class="notes" src="notes.svg" alt="">
         <span>Notes</span>
       </li>
       <li class="item">
-        <img class="add" src="add.svg" alt="" />
+        <img class="add" src="add.svg" alt="">
         <span>Add Task</span>
       </li>
       <li class="item">
-        <img class="trash" src="trash.svg" alt="" />
+        <img class="trash" src="trash.svg" alt="">
         <span>Trash</span>
       </li>
       <li class="item">
-        <img class="support" src="support.svg" alt="" />
+        <img class="support" src="support.svg" alt="">
         <span>Support</span>
       </li>
       <li class="item">
-        <img class="setting" src="setting.svg" alt="" />
+        <img class="setting" src="setting.svg" alt="">
         <span>Setting</span>
       </li>
-    </ul>
     </ul>
   </div>
   <!-- left content ends -->
 </div>
 <!-- left bar ends -->
 
+<!-- page content starts -->
+<div class="page-content">
+  <div class="header">Today: May 1, 2024</div>
+
+  <!-- content categories starts -->
+  <div class="content-categories">
+    <div class="label-wrapper">
+      <input type="radio" name="nav" id="opt-1" class="nav-item">
+      <label class=" category" for="opt-1">All Tasks</label>
+    </div>
+
+    <div class="label-wrapper">
+      <input type="radio" name="nav" id="opt-2" class="nav-item">
+      <label class="category" for="opt-2">Important</label>
+    </div>
+
+    <div class="label-wrapper">
+      <input type="radio" name="nav" id="opt-3" class="nav-item">
+      <label class="category" for="opt-3">Uncomplete</label>
+    </div>
+    
+    <div class="label-wrapper">
+      <input type="radio" name="nav" id="opt-4" class="nav-item">
+      <label class="category" for="opt-4">Completed</label>
+    </div>
+
+  </div>
+  <!--  -->
+  <!-- contemt categories ends -->
+
+  <!-- tasks wrapper starts -->
+  <div class="tasks-wrapper">
+    <div class="task">
+      <input type="checkbox" name="task" id="item-1" class="task-item" checked>
+      <label for="item-1">
+        <span class="label-text">Finish Math Homework</span>
+      </label>
+
+    </div>
+    <div class="task">
+      <input type="checkbox" name="task" id="item-2" class="task-item" checked>
+      <label for="item-2">
+        <span class="label-text">Go grocery shopping</span>
+      </label>
+
+    </div>
+    <div class="task">
+      <input type="checkbox" name="task" id="item-3" class="task-item" checked>
+      <label for="item-3">
+        <span class="label-text">Do daundry</span>
+      </label>
+
+    </div>
+    <div class="task">
+      <input type="checkbox" name="task" id="item-4" class="task-item" checked>
+      <label for="item-4">
+        <span class="label-text">Make dinner</span>
+      </label>
+
+    </div>
+    <div class="task">
+      <input type="checkbox" name="task" id="item-5" class="task-item" checked>
+      <label for="item-5">
+        <span class="label-text">Make dinner</span>
+      </label>
+
+    </div>
+    <div class="task">
+      <input type="checkbox" name="task" id="item-6" class="task-item">
+      <label for="item-6">
+        <span class="label-text"></span>
+      </label>
+    </div>
+
+    <div class="header upcoming">Upcoming</div>
+    <div class="task">
+      <input class="task-item" name="task" type="checkbox" id="item-7">
+      <label for="item-7">
+        <span class="label-text">Dentist appointment on May 22 at 2 P.M.</span>
+      </label>
+
+    </div>
+    <div class="task">
+      <input class="task-item" name="task" type="checkbox" id="item-8">
+      <label for="item-8">
+        <span class="label-text">Science project due May 22</span>
+      </label>
+
+    </div>
+    <div class="task">
+      <input class="task-item" name="task" type="checkbox" id="item-9">
+      <label for="item-9">
+        <span class="label-text">Takeout trash on Wed May 22</span>
+      </label>
+
+    </div>
+    <div class="task">
+      <input class="task-item" name="task" type="checkbox" id="item-10">
+      <label for="item-10">
+        <span class="label-text">Go to event at temple on May 27</span>
+      </label>
+
+    </div>
+    <div class="task">
+      <input class="task-item" name="task" type="checkbox" id="item-11">
+      <label for="item-11">
+        <span class="label-text">Visit parents with Kevin on May 29</span>
+      </label>
+    </div>
+  </div>
+  <!-- tasks wrapper ends -->
+
+</div>
+<!--  -->
+<!-- page content ends -->
+
+<!-- right bar starts -->
+<div class="right-bar">
+  <div class="top-part">
+    <img class="users" src="user.svg" alt="">
+    <link href="user.svg" rel="stylesheet"/>
+    
+    <div class="account">
+       <i class="fa fa-user-o" aria-hidden="true"></i>
+       <p style="display: inline-block" >My Account</p>
+    </div>
+    <div class="count">5</div>
+  </div>
+
+  <div class="header">Messages</div>
+  <div class="right-content">
+    <div class="task-box yellow">
+      <div class="description-task">
+        <div class="task-name">From: Tim Smith </div>
+        <div class="date">Date: 05-16-2024</div>
+        <div class="message">Message: I have added in info ...</div>
+      </div>
+    </div>
+
+    <div class="task-box blue">
+      <div class="description-task">
+        <div class="task-name">From:Tom Hans </div>
+        <div class="date">Date: 05-15-2024</div>
+        <div class="message">Message: I have reached out ...</div>
+      </div>
+
+    </div>
+    <div class="task-box red">
+      <div class="description-task">
+        <div class="task-name">From: Jane Lace </div>
+        <div class="date">Date: 05-03-2024</div>
+        <div class="message">Message: I have reached out ...</div>
+      </div>
+
+    </div>
+    <div class="task-box green">
+      <div class="description-task">
+        <div class="task-name">From: Kevin Le </div>
+        <div class="date">Date: 05-11-2024</div>
+        <div class="message">Message: Hi everyone, there ... </div>
+      </div>
+      
+    </div>
+    <div class="task-box blue">
+      <div class="description-task">
+        <div class="task-name">From: Tan Vans </div>
+        <div class="date">Date: 05-11-2024</div>
+        <div class="message">Message: This is Tim,  I was ...</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- right bar ends -->
+  </body>
   </body>
 </html>
