@@ -12,8 +12,6 @@
 }
 
 
-
-
 body {
   margin: 0;
   justify-content: center;
@@ -258,15 +256,15 @@ label .label-text:before {
 }
 
 .yellow {
-  background-color: var(--box-color);
+  background-color: #FEE191;
 }
 
 .red {
-  background-color: var(--box-color-3);
+  background-color: #FFB1C4;
 }
 
 .green {
-  background-color: var(--box-color-4);
+  background-color: #8DDEB8;
 }
 
 
