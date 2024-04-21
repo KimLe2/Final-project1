@@ -13,60 +13,59 @@
 
 
 body {
-  margin: 0;
-  justify-content: center;
   flex-direction: column;
-  overflow: auto;
-  width: 100%;
-  height: 100vh;
-  padding: 20px;
   font-family: sans-serif; 
-  font-size: 16px;
+  font-size: 14px;
   background-color: white; 
+  height: 110vh;
+  padding: 10px;  margin: 0;
+  overflow: auto;
+  width: 100%;  
+  justify-content: center;
 }
 
 ul {
-  list-style-type: none;
   padding: 0;
+  list-style-type: none;
 }
 
 .task-manager {
+  height: 110vh;
   display: flex;
   justify-content: space-between;
+  border-radius: 5px;
   width: 100%;
+  max-height: 1000px;
   max-width: 1200px;
-  height: 100vh;
-  max-height: 900px;
-  border-radius: 4px;
 }
 
 
 .left-bar {
-  background-color: #000000;
-  width: 230px;
-  border-right: 1px solid #000000;
   position: relative;
+  width: 240px;
+  background-color: #000000;
+  border-right: 2px solid #000000;
 }
 
 .left-content {
-  padding: 40px;
+  padding: 38px;
 }
 
 .item {
+  font-weight: 520;
+  margin-bottom: 15px;
   color: #000000;
-  margin-bottom: 14px;
-  font-weight: 500;
 }
 
 .item img {
-  width: 14px;
-  height: 14px;
   color: 000000;
-  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+  margin-right: 15px;
 }
 
 .category-list {
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 .category-list .item {
@@ -74,36 +73,37 @@ ul {
 
 }
 .actions {
-  padding: 12px;
-  display: flex;
   justify-content: space-between;
+  display: flex;
+  padding: 14px;
 }
 
 .left-bar {
-  background-color: #edf3fa;
-  width: 230px;
-  border-right: 1px solid #DDDDDD;
   position: relative;
+  width: 240px;
+  border-right: 1px solid #DDDDDD;
+  background-color: #edf3fa;
 }
 
 .page-content {
+  padding: 38px 18px 0 18px;
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding: 40px 20px 0 20px;
 }
 
 .page-content .header {
+  margin-top: 26px;
   font-size: 26px;
   color: #074A87;
-  margin-top: 30px;
+
 }
 
 .content-categories {
-  display: flex;
-  border-bottom: 1px solid #DDDDDD;
   width: 100%;
-  padding: 20px 0;
+  display: flex;
+  padding: 25px 0;
+  border-bottom: 1px solid #DDDDDD;
 }
 
 .nav-item {
@@ -111,20 +111,21 @@ ul {
 }
 
 .category {
-  font-weight: 500;
+  transition: 0.3s solid ease-in;
   color: #000000;
-  border-bottom: 1px solid #ffffff;
-  transition: 0.4s solid ease-in;
-  padding:  20px 30px;
+  font-weight: 520;
   cursor: pointer;
+  border-bottom: 1px solid #ffffff;
+  padding:  18px 25px;
+
 }
 
 #opt-1:checked + label,
 #opt-2:checked + label,
 #opt-3:checked + label,
 #opt-4:checked + label {
+  border-bottom: 1px solid #074A87;
   color: #074A87;
-  border-bottom: 2px solid #074A87;
 }
 
 .task-item {
@@ -132,26 +133,26 @@ ul {
 }
 
 .tasks-wrapper {
-  padding: 30px 0;
-  flex: 1;
-  overflow-y: auto;
+  padding-right: 5px;
   height: 100%;
-  padding-right: 8px;
+  padding: 25px 0;
+  overflow-y: auto;
+  flex: 1;
 }
 
 .task {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  position: relative;
-  margin-bottom: 16px;
-  padding-left: 30px;
+  margin-bottom: 15px;
+  padding-left: 35px;
   color: #000000;
-  font-size: 13px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 510;
 }
 
 .task:hover {
-  transform: translatex(2px);
+  transform: translatex(3px);
 }
 
 .task label {
@@ -163,80 +164,83 @@ label .label-text {
 }
 
 label .label-text:before {
+  border: 1px solid #D9D9D9;
+  transition: 0.3s ease;
+  height: 15px;
+  border-radius: 2.0px;
+  left: -25px;
   content: '';
   position: absolute;
-  width: 14px;
-  height: 14px;
-  border: 1px solid #D9D9D9;
-  border-radius: 2px;
-  left: -24px;
-  transition: 0.2s ease;
+  width: 15px;
 }
 
 .task-item:checked + label .label-text:before {
-  border: none;
-  background-image: url('checkbox.svg');
   background-repeat: no-repeat;
-  background-size: 10px;
+  background-size: 12px;
+  border: none;
   background-position: center;
   border: 1px solid #D9D9D9;
+  background-image: url('checkbox.svg');
 }
 
 .tag {
-  font-size: 10px;
-  padding: 4px 8px;
-  border-radius: 20px;
+  border-radius: 18px;
+  padding: 5px 10px;
+  font-size: 12px;
 }
 
 .upcoming {
+  padding-bottom: 28px;
+  margin-bottom: 25px;
   border-bottom: 1px solid #DDDDDD;
-  padding-bottom: 30px;
-  margin-bottom: 30px;
 }
 
 .right-bar {
-  width: 320px;
-  border-left: 1px solid #D9D9D9;
-  display: flex;
   flex-direction: column;
+  display: flex;
+  width: 310px;
+  border-left: 1px solid #D9D9D9;
 }
 
 .right-bar .header {
-  font-size: 20px;
   color: #074A87;
-  margin-left: 30px;
+  margin-left: 20px;
+  font-size: 26px;
 }
 
 .top-part {
-  padding: 30px;
   align-self: flex-end;
+  padding: 28px;
 }
 
 
 .top-part .count {
-  font-size: 12px;
-  border-radius: 60%;
-  width: 20px;
-  height: 20px;
   background-color: #074A87;
   color: #fff;
   justify-content: left;
+  height: 22px;
+  font-size: 12px;
+  border-radius: 60%;
+  width: 22px;
+
 }
 
 .right-content {
-  padding: 10px 40px;
-  overflow-y: auto;
   flex: 1;
+  overflow-y: auto;
+  padding: 12px 36px;
 }
 
 .task-box {
+  border-radius: 14px; 
+  box-shadow: 2px 2px 4px 2px #D9D9D9;
   position: relative;
-  border-radius: 12px;
+  cursor: pointer;
+  margin: 22px 0;
+  padding: 22px;
   width: 100%;
-  margin: 20px 0;
-  padding: 16px;
-  cursor: pointer;¨
-  box-shadow: 2px 2px 4px 2px #D9D9D9
+
+
 }
 
 .task-box:hover {
@@ -274,8 +278,8 @@ label .label-text:before {
   }
 }
 @media screen and (max-width: 700px) {
+  flex-direction: column;
   .task-manager {
-    flex-direction: column;
     overflow-y: auto;
   }
   .right-bar,
@@ -283,18 +287,19 @@ label .label-text:before {
     width: 100%;
     display: block;
   }
+
   .tasks-wrapper {
     height: auto;
   }
 }
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 540px) {
   .page-content {
-    padding: 40px 10px 0 10px;
+    padding: 38px 12px 0 12px;
   }
   .right-content {
-    padding: 10px 16px;
+    padding: 12px 18px;
   }
   .category {
-    padding: 20px;
+    padding: 22px;
   }
 }
