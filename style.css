@@ -181,6 +181,7 @@ label .label-text:before {
   background-position: center;
   border: 1px solid #D9D9D9;
   background-image: url('checkbox.svg');
+  text-decoration: ;
 }
 
 .tag {
