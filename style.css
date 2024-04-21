@@ -298,10 +298,6 @@ label .label-text:before {
   background-color: var(--box-color);
 }
 
-.blue {
-  background-color: var(--box-color-2);
-}
-
 .red {
   background-color: var(--box-color-3);
 }
